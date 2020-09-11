@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int div3();
+
+int main(void) {
+  int b = 3;
+  int a = div3(b);
+    if ( a == 0){
+      printf("true the number %d is divisible by 3!",b);
+    }
+    else if(a !=0 ) {
+      printf("true the number %d is not divisible by 3!",b);
+    }
+}
+
+
+int div3(int aa){
+  int remainder = aa % 3;
+  return remainder;
+}
